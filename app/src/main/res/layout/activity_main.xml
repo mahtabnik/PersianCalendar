@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.MainActivity"
+    android:background="@drawable/back">
+
+
+
+
+    <ImageView
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/image"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/preMonth"
+
+       />
+
+    <GridView
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid"
+        android:layout_below="@+id/imageView"
+        android:numColumns="7"
+        android:gravity="center|center_horizontal"
+        android:layoutDirection="rtl"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="16dip"/>
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ماه قبل"
+        android:id="@+id/preMonth"
+        android:layout_below="@+id/monthView"
+        android:elevation="8dip"
+        android:background="#277cfc"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="8dip"
+        android:padding="8dip"
+        android:textSize="10sp" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ماه بعد"
+        android:id="@+id/postMonth"
+        android:layout_below="@+id/monthView"
+        android:layout_alignParentRight="true"
+        android:elevation="8dip"
+        android:background="#277cfc"
+        android:textColor="#ffffff"
+        android:padding="8dip"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/monthView"
+        android:textSize="20sp"
+        android:layout_marginBottom="8dip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/yearView"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+       />
+
+
+</RelativeLayout>
